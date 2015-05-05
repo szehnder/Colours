@@ -15,7 +15,7 @@ import AppKit
 public typealias Color = NSColor
 #endif
 
-extension Color {
+public extension Color {
     // MARK: - Closure
     typealias TransformBlock = CGFloat -> CGFloat
     
@@ -289,7 +289,7 @@ extension Color {
     
     
     // MARK: - Color Scheme
-    func colorScheme(type: ColorScheme) -> [Color] {
+    public func colorScheme(type: ColorScheme) -> [Color] {
         switch (type) {
         case .Analagous:
             return Color.analgousColors(self.hsba())
