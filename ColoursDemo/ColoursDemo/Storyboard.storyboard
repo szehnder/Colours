@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="NQ6-8t-xSZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="NQ6-8t-xSZ">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+        </mutableArray>
+        <mutableArray key="PingFangWatch.ttc">
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+            <string>STHeitiSC-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--Navigation Controller - Demo-->
+        <!--Demo-->
         <scene sceneID="q70-og-vEe">
             <objects>
                 <navigationController definesPresentationContext="YES" id="U0H-If-fwx" sceneMemberID="viewController">
@@ -21,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="140" y="-115"/>
         </scene>
-        <!--Colours Demo Container View Controller - Colours Demo-->
+        <!--Colours Demo-->
         <scene sceneID="hu3-jU-GN0">
             <objects>
                 <viewController id="3iX-rX-kMl" customClass="ColoursDemoContainerViewController" sceneMemberID="viewController">
@@ -35,11 +70,9 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgc-JC-4vu">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wf0-gK-CRb">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1430"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="G8p-jS-7xf"/>
@@ -98,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="-406" y="593"/>
         </scene>
-        <!--Colours List Table View Controller - Colours List-->
+        <!--Colours List-->
         <scene sceneID="wz3-G5-t6B">
             <objects>
                 <tableViewController id="EgC-MI-xh8" customClass="ColoursListTableViewController" sceneMemberID="viewController">
@@ -107,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FTd-Tx-FzN">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reuseMe" id="FTd-Tx-FzN">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FTd-Tx-FzN" id="xw0-Ie-XlD">
@@ -123,7 +156,7 @@
             </objects>
             <point key="canvasLocation" x="579" y="593"/>
         </scene>
-        <!--Navigation Controller - Schemes-->
+        <!--Schemes-->
         <scene sceneID="39X-7J-gmI">
             <objects>
                 <navigationController definesPresentationContext="YES" id="jVO-kR-ou7" sceneMemberID="viewController">
@@ -139,7 +172,7 @@
             </objects>
             <point key="canvasLocation" x="140" y="1318"/>
         </scene>
-        <!--Schemes Container View Controller - Colour Schemes-->
+        <!--Colour Schemes-->
         <scene sceneID="cgh-qH-jCi">
             <objects>
                 <viewController id="SHY-m9-Ke3" customClass="SchemesContainerViewController" sceneMemberID="viewController">
@@ -153,11 +186,9 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uM-fx-aQF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-RL-lMt">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="750"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.40608224693251532" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="750" id="L8y-Y9-Fpl"/>
@@ -195,7 +226,7 @@
             </objects>
             <point key="canvasLocation" x="579" y="1318"/>
         </scene>
-        <!--Navigation Controller - List-->
+        <!--List-->
         <scene sceneID="uZ4-Xq-XZB">
             <objects>
                 <navigationController definesPresentationContext="YES" id="zfD-2X-FkL" sceneMemberID="viewController">
@@ -225,7 +256,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EX-qu-hdx">
                                 <rect key="frame" x="24" y="159" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -239,7 +269,6 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Colours Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z7-1g-Mqn">
                                 <rect key="frame" x="24" y="20" width="273" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -247,7 +276,6 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="A set of beautiful predefined UIColors for your personal use. It couldn't be easier." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="Llq-Wq-mUE">
                                 <rect key="frame" x="24" y="44" width="273" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -256,7 +284,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-1a-nbi">
                                 <rect key="frame" x="24" y="218" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -270,7 +297,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvB-w5-uuU">
                                 <rect key="frame" x="24" y="277" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -284,7 +310,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l2-2l-Tck">
                                 <rect key="frame" x="24" y="336" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -298,7 +323,6 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="System Colors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24J-Ul-J1T">
                                 <rect key="frame" x="24" y="120" width="273" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -306,7 +330,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bad-cM-t4R">
                                 <rect key="frame" x="24" y="466" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -320,7 +343,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj6-Ik-div">
                                 <rect key="frame" x="24" y="525" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -334,7 +356,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCu-KS-9fO">
                                 <rect key="frame" x="24" y="584" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -348,7 +369,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93E-Ba-y1N">
                                 <rect key="frame" x="24" y="643" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -362,7 +382,6 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Miscellaneous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIH-jq-bLh">
                                 <rect key="frame" x="24" y="427" width="273" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -370,7 +389,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-gt-JLb">
                                 <rect key="frame" x="24" y="702" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -384,7 +402,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCR-5Z-Xek">
                                 <rect key="frame" x="24" y="761" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -398,7 +415,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5R-Nj-mVl">
                                 <rect key="frame" x="24" y="820" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -412,7 +428,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPf-8s-WHn">
                                 <rect key="frame" x="24" y="879" width="273" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.050980396570000003" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
@@ -426,7 +441,6 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Brought to you by @bennyguitar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="Iah-G3-ONG">
                                 <rect key="frame" x="23" y="1361" width="273" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -435,32 +449,26 @@
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXr-wV-71d">
                                 <rect key="frame" x="25" y="980" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5zX-dh-Tp4">
                                 <rect key="frame" x="245" y="980" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fs-Mt-CMv">
                                 <rect key="frame" x="190" y="980" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IcR-m9-7dm">
                                 <rect key="frame" x="80" y="980" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="siN-Oc-wHG">
                                 <rect key="frame" x="135" y="980" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Analagous Color Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="dyX-5C-ZPY">
                                 <rect key="frame" x="24" y="947" width="273" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -469,32 +477,26 @@
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-Ip-Z4m">
                                 <rect key="frame" x="26" y="1080" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBd-Ho-65W">
                                 <rect key="frame" x="246" y="1080" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXQ-ej-TDD">
                                 <rect key="frame" x="191" y="1080" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L6F-Fg-xLN">
                                 <rect key="frame" x="81" y="1080" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Cs-Ie-nQh">
                                 <rect key="frame" x="136" y="1080" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Monochromatic Color Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="fnr-xU-QO3">
                                 <rect key="frame" x="25" y="1047" width="273" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -503,32 +505,26 @@
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OyR-Ek-lnN">
                                 <rect key="frame" x="25" y="1181" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNu-Hk-0qN">
                                 <rect key="frame" x="245" y="1181" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9V-Y0-hHx">
                                 <rect key="frame" x="190" y="1181" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhv-9b-88z">
                                 <rect key="frame" x="80" y="1181" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2R-CG-CgQ">
                                 <rect key="frame" x="135" y="1181" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Triad Color Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="9Ad-pz-4CS">
                                 <rect key="frame" x="24" y="1147" width="273" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -537,32 +533,26 @@
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mL-NI-YTQ">
                                 <rect key="frame" x="25" y="1284" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COw-PO-N5B">
                                 <rect key="frame" x="245" y="1284" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25d-Lc-eu0">
                                 <rect key="frame" x="190" y="1284" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fZ8-xk-M2K">
                                 <rect key="frame" x="80" y="1284" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-UG-A3n">
                                 <rect key="frame" x="135" y="1284" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Complementary Color Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="hLM-Rj-sCY">
                                 <rect key="frame" x="24" y="1250" width="273" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -615,7 +605,6 @@
         <!--Schemes View Controller-->
         <scene sceneID="xV5-06-g9I">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ua4-Vl-Sgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="em7-Pb-NnM" customClass="SchemesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4qr-rg-iFS"/>
@@ -627,11 +616,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54a-eC-WPh" userLabel="Red">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.65000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fYM-IC-gce">
                                         <rect key="frame" x="13" y="45" width="294" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -640,7 +627,6 @@
                                     </slider>
                                     <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-91-kfe">
                                         <rect key="frame" x="210" y="10" width="94" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="stepperChanged:" destination="em7-Pb-NnM" eventType="valueChanged" id="hjs-Vc-VHy"/>
@@ -648,7 +634,6 @@
                                     </stepper>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red - 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJV-bQ-wJ6">
                                         <rect key="frame" x="15" y="16" width="183" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -666,11 +651,9 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17i-QC-BE2" userLabel="Green">
                                 <rect key="frame" x="0.0" y="90" width="320" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.94999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bwr-fM-NYn">
                                         <rect key="frame" x="13" y="45" width="294" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="minimumTrackTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -679,7 +662,6 @@
                                     </slider>
                                     <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="UJ8-Xe-FC2">
                                         <rect key="frame" x="210" y="10" width="94" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="stepperChanged:" destination="em7-Pb-NnM" eventType="valueChanged" id="OhL-0O-Xvo"/>
@@ -687,7 +669,6 @@
                                     </stepper>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green - 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgv-n0-22C">
                                         <rect key="frame" x="15" y="16" width="183" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -703,11 +684,9 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIV-Ku-7uM" userLabel="Blue">
                                 <rect key="frame" x="0.0" y="180" width="320" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uRZ-SE-fcv">
                                         <rect key="frame" x="14" y="45" width="294" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -716,7 +695,6 @@
                                     </slider>
                                     <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="KBk-Va-XOa">
                                         <rect key="frame" x="211" y="10" width="94" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="stepperChanged:" destination="em7-Pb-NnM" eventType="valueChanged" id="hNf-JC-x6r"/>
@@ -724,7 +702,6 @@
                                     </stepper>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue - 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zK-BD-xUd">
                                         <rect key="frame" x="15" y="16" width="183" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -740,36 +717,29 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqy-9g-m53" userLabel="Analagous">
                                 <rect key="frame" x="0.0" y="260" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lo-rT-5EL">
                                         <rect key="frame" x="20" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275306748462" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhj-b2-97N">
                                         <rect key="frame" x="78" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deA-FD-scA">
                                         <rect key="frame" x="136" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2P-jK-LHc">
                                         <rect key="frame" x="194" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzf-vr-MRe">
                                         <rect key="frame" x="252" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Analagous Color Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ROK-0h-z9v">
                                         <rect key="frame" x="20" y="0.0" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="FMS-L5-diC"/>
                                         </constraints>
@@ -811,36 +781,29 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAy-yn-cIp" userLabel="Monochromatic">
                                 <rect key="frame" x="0.0" y="370" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PK3-Wo-CzM">
                                         <rect key="frame" x="20" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khq-X8-CV9">
                                         <rect key="frame" x="78" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osh-Ju-Pwd">
                                         <rect key="frame" x="136" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-N5-ruO">
                                         <rect key="frame" x="194" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ux0-MJ-bSN">
                                         <rect key="frame" x="252" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Monochromatic Colour Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="XeQ-Ue-mze">
                                         <rect key="frame" x="20" y="0.0" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Gvs-XY-qgh"/>
                                         </constraints>
@@ -882,36 +845,29 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6q2-mR-esP" userLabel="Triad">
                                 <rect key="frame" x="0.0" y="480" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XS8-bJ-ELY">
                                         <rect key="frame" x="20" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q23-8S-dtE">
                                         <rect key="frame" x="78" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47K-B2-GAA">
                                         <rect key="frame" x="136" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVJ-lf-Kcn">
                                         <rect key="frame" x="194" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYO-7T-xCn">
                                         <rect key="frame" x="252" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Triad Colour Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="mag-3W-UDC">
                                         <rect key="frame" x="20" y="0.0" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1rE-CU-hAZ"/>
                                         </constraints>
@@ -953,36 +909,29 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Q-Lu-CX1" userLabel="Complementary">
                                 <rect key="frame" x="0.0" y="590" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8D-gi-llZ">
                                         <rect key="frame" x="20" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQu-UU-3aE">
                                         <rect key="frame" x="78" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3v-z3-MRX">
                                         <rect key="frame" x="136" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWn-nq-TGs">
                                         <rect key="frame" x="194" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4A-ej-RfW">
                                         <rect key="frame" x="252" y="34" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.51579275309999995" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Complementary Colour Scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Hfj-6R-np7">
                                         <rect key="frame" x="20" y="0.0" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="MD1-fb-IFt"/>
                                         </constraints>
@@ -1024,7 +973,6 @@
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Chosen colour is displayed as the first colour in each scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" translatesAutoresizingMaskIntoConstraints="NO" id="B0j-FQ-JWz">
                                 <rect key="frame" x="15" y="702" width="290" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="ahp-qY-y3o"/>
                                 </constraints>
@@ -1112,13 +1060,9 @@
                         <outlet property="triColor5" destination="MYO-7T-xCn" id="bOJ-Wz-yKP"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ua4-Vl-Sgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1034" y="1227"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
